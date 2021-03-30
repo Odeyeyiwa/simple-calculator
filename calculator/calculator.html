@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Classwork 2</title>
+			<meta name="keyword" content="">
+			<meta name="description" content="">
+			<meta name="author" content="">
+			<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+				<style type="text/css">
+					.container{
+						min-height: 300px;
+						}
+					
+				</style>
+				<link rel="stylesheet" type="text/css" href="bootstrap.css">
+				<link rel="stylesheet" type="text/css" href="icons/css/all.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="text-center mt-5"> Simple Arithmetic Calculator </h1>
+
+					<div class="form-control" style="border: 2px solid black; min-height:100px;">
+						<p>Answer =</p>	
+						<h1 id="ans" class="text-center"></h1>
+					</div>
+						<br>
+					<label >Number 1</label>
+					<input type="text" name="num1" id="num1" class="form-control">
+						<br>
+					<label>Number 2</label>
+					<input type="text" name="num2" id="num2" class="form-control">
+						<br>
+
+					<div class="text-center">
+
+						<button class="btn btn-primary mt-3 font-weight-bold btn-lg ml-3" onclick="add()" >Addition</button>
+						<button class="btn btn-warning mt-3 font-weight-bold btn-lg ml-3" onclick="sub()" >Subtraction</button>
+						<button class="btn btn-danger mt-3 font-weight-bold btn-lg ml-3" onclick="mod()" >%</button>
+						<button class="btn btn-info mt-3 font-weight-bold btn-lg ml-3" onclick="div()" >Divide</button>
+						<button class="btn btn-success mt-3 font-weight-bold btn-lg ml-3" onclick="mut()" >Multiply</button>
+
+					</div>
+					
+					
+				</div>				
+			</div>
+		</div>
+
+			<script type="">
+				
+				
+				function add() {
+					var one=
+					document.getElementById('num1').value
+					var two=
+					document.getElementById('num2').value
+					document.getElementById('ans').innerHTML=(Number(one) + Number(two))
+					}
+
+
+				function sub() {
+					var one=
+					document.getElementById('num1').value
+					var two=
+					document.getElementById('num2').value
+					document.getElementById('ans').innerHTML=( one - two )
+					}
+
+				function mod() {
+					var one=
+					document.getElementById('num1').value
+					var two=
+					document.getElementById('num2').value
+					document.getElementById('ans').innerHTML=( one % two )
+					}
+
+				function div() {
+					var one=
+					document.getElementById('num1').value
+					var two=
+					document.getElementById('num2').value
+					document.getElementById('ans').innerHTML=( one / two )
+					}
+					
+				function mut() {
+					var one=
+					document.getElementById('num1').value
+					var two=
+					document.getElementById('num2').value
+					document.getElementById('ans').innerHTML=( one * two )
+					}		
+
+			</script>
+
+
+			<script src="js/jquery-3.5.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.js"></script>
+	</body>
+	</html>
